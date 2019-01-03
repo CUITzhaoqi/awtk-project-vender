@@ -1,0 +1,11 @@
+bin
+inc
+*.obj
+lib
+/vender/.sconsign.dblite
+/vender/scripts/*.pyc
+/.vscode
+_build
+.sconsign.dblite
+*.bin
+*.pyc
