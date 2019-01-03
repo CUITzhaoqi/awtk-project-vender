@@ -1,0 +1,30 @@
+<dialog anim_hint="bottom_to_top" x="0" y="bottom" w="100%" h="50%">
+  <dialog_title x="0" y="0" w="100%" h="30" text="请扫码完成支付" />
+  <dialog_client name="qr_dialog" x="0" y="bottom" w="100%" h="-30" layout="r1 c0 m20">
+    <view x="0" y="0" w="90%" h="100%" layout="row:0 col:1">
+      <view name="qr_view" x="0" y="0" w="100%" h="50%" layout="row:0 col:1 m:10 s:10">
+         <!-- <qr name="qr_code" style="qr_border" x="0" y="0" w="100%" h="100%" text="致远" pix_size="3"/> -->
+      </view>
+      <view name="ext_view" x="0" y="55%" w="100%" h="50%" layout="row:1 col:0 m:10 s:10">
+        <view name="ext_view1" x="0" y="0" w="70%" h="45%" layout="row:0 col:1 m:10 s:10">
+          <list_item style="empty" children_layout="default(r=1,c=0)" x="0" y="0" w="90%" h="25">
+            <label style="center" x="0" y="-0" w="30%" h="30" text="商品信息:"/>
+            <label style="center" x="30%" y="-0" w="70%" h="30" text="AWTK is cool!"/>
+          </list_item>
+          <list_item style="empty" children_layout="default(r=1,c=0)" x="0" y="0" w="90%" h="25">
+            <label style="center" x="0" y="-0" w="30%" h="30" text="价格:"/>
+            <label style="center" x="30%" y="-0" w="70%" h="30" text="18"/>
+          </list_item>
+        </view>
+        <view name="ext_view2" x="70%" y="55%" w="30%" h="45%" children_layout="default(r=0,c=1)">
+          <list_item style="empty" children_layout="default(r=1,c=0)" x="0" y="-200" w="90%" h="50">
+            <label name="back_time" style="count_black" x="30%" y="0" w="70%" h="30" text=""/>
+          </list_item>
+          <list_item style="empty" children_layout="default(r=1,c=0)" x="0" y="0" w="90%" h="25">
+            <button name="show_fps" x="c" y="0" w="70%" h="62" text="back" />
+          </list_item>
+        </view>
+      </view>
+    </view>
+  </dialog_client>
+</dialog>
